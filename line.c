@@ -21,6 +21,7 @@ void Initlink(student *s,int n)
         q=p;
     }
 }
+//输出
 void printNews(student *s)
 {
     student *p;
@@ -32,6 +33,7 @@ void printNews(student *s)
     }
 
 }
+//查找
 int searchNew(student *s,student s1)
 {
     int count=1;
@@ -48,6 +50,7 @@ int searchNew(student *s,student s1)
     }
     return 0;
 }
+//插入
 int insertS(student *s,student s1)
 {
     student *p,*q;
@@ -70,6 +73,7 @@ int insertS(student *s,student s1)
     return 1;
 
 }
+//删除
 int deletelink(student *s,int n)
 {
     int i=0;
@@ -84,6 +88,7 @@ int deletelink(student *s,int n)
     free(p);
 
 }
+//排序
 int orderlink(student *s,int n)
 {
     student *p,*q,*minp,*minq,*root;
@@ -135,7 +140,7 @@ int main()
            "4、把学生按成绩由高到低排序，输出排序结果\n"
            "5、销毁链表\n");
     printf("请输入：");
-    scanf("%d",&option);
+    scanf("%d",&option);//输入
     switch (option) {
         case 1:
             printf("功能1：从链表头开始，遍历输出学生信息\n");
